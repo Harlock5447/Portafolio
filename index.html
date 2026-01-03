@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portafolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- FontAwesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: DM Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#191919",
+              light: "#A7A7A7",
+              card: "#363636",
+              heading: "#CCCCCC",
+            },
+            fontFamily: {
+              sans: ['"DM Sans"', "sans-serif"],
+            },
+            backgroundImage: {
+              "gradient-text": "linear-gradient(to right, #13B0F5, #E70FAA)",
+            },
+          },
+        },
+      };
+    </script>
+    <style data-purpose="custom-utilities">
+      body {
+        background-color: #191919;
+        color: #a7a7a7;
+        font-family: "DM Sans", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .text-gradient {
+        background: linear-gradient(to right, #13b0f5, #e70faa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .nav-link:hover {
+        color: white;
+        transition: color 0.3s ease;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- BEGIN: Header -->
+    <header
+      class="w-full pt-8 pb-4 px-6 md:px-12 lg:px-32 flex flex-col md:flex-row justify-between items-center text-lg font-medium"
+    >
+      <!-- Logo -->
+      <div class="mb-4 md:mb-0 flex items-center">
+        <span
+          class="bg-gradient-to-r from-[#13B0F5] to-[#E70FAA] text-transparent bg-clip-text font-bold tracking-wider text-2xl whitespace-nowrap"
+          >JEREMY QUISPITIRA</span
+        >
+      </div>
+      <!-- Navigation -->
+      <nav class="mb-4 md:mb-0">
+        <ul class="flex space-x-6 md:space-x-12">
+          <li><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li><a class="nav-link" href="about.html">Sobre mi</a></li>
+          <li><a class="nav-link" href="tecnologias.html">Tecnologias</a></li>
+          <li><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+          <li><a class="nav-link" href="contactame.html">Contactame</a></li>
+        </ul>
+      </nav>
+      <!-- Social Icons -->
+      <div class="flex space-x-5 text-white">
+        <a class="hover:text-blue-400 transition" href="https://github.com/Harlock5447"
+          ><i class="fab fa-github fa-lg"></i
+        ></a>
+        <a class="hover:text-blue-400 transition" href="https://www.instagram.com/jeremy_qr/"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a class="hover:text-blue-400 transition" href="https://www.linkedin.com/in/jerquispitira/"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+      </div>
+    </header>
+    <!-- END: Header -->
+    <main class="px-6 md:px-12 lg:px-32">
+      <!-- BEGIN: Hero Section -->
+      <section
+        class="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-16 py-12 lg:py-24"
+      >
+        <!-- Left Content -->
+        <div class="text-center lg:text-left mt-6 lg:mt-0 max-w-xl">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            <span class="block text-3xl md:text-5xl font-bold text-white mb-2"
+              >Hola 👋,</span
+            >
+            <span class="block text-3xl md:text-5xl font-bold text-white mb-2"
+              >Mi nombre es</span
+            >
+            <span
+              class="block text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#13B0F5] to-[#E70FAA] text-transparent bg-clip-text mb-2"
+              >Jeremy QR</span
+            >
+            
+          </h1>
+        </div>
+        <!-- Right Content: Profile Image -->
+        <div class="flex justify-center items-center">
+          <div class="rounded-full p-2 bg-gradient-to-r from-[#13B0F5] to-[#E70FAA] shadow-[0_0_40px_rgba(19,176,245,0.25)] w-[300px] h-[300px] md:w-[340px] md:h-[340px] lg:w-[350px] lg:h-[350px] flex items-center justify-center">
+          
+            <div class="bg-dark rounded-full w-full h-full overflow-hidden">
+              <img
+                alt="Pavan MG Profile"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"
+                src="img/imagen_por.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Hero Section -->
+      <!-- BEGIN: Tech Stack Section -->
+      <section class="py-20">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            Experiencia con 
+          </h2>
+          <p class="text-xl text-light">
+            Tecnologías con las que he estado trabajando recientemente
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-items-center gap-x-10 gap-y-10"
+        >
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="devicon-html5-plain colored text-8xl"></i>
+          </div>
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="devicon-css3-plain colored text-8xl"></i>
+          </div>
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="devicon-javascript-plain colored text-8xl"></i>
+          </div>
+            <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="fa-brands fa-java colored text-8xl"></i>
+          </div>
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="fa-brands fa-php colored text-8xl"></i>
+          </div>
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="fa-brands fa-python colored text-8xl"></i>
+          </div>
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="devicon-bootstrap-plain colored text-8xl"></i>
+          </div>
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="devicon-tailwindcss-original colored text-8xl"></i>
+          </div>
+          <div
+            class="h-28 w-28 flex items-center justify-center rounded-xl bg-transparent border-2 border-[#363636] grayscale hover:grayscale-0 hover:border-white transition-all duration-300"
+          >
+            <i class="devicon-vscode-plain colored text-8xl"></i>
+          </div>
+        </div>
+      </section>
+      <!-- END: Tech Stack Section -->
+      <!-- BEGIN: Projects Section -->
+      <section class="mb-20 py-20">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            Proyectos
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-x-12 gap-y-12"
+        >
+          <!-- Project Card 1 -->
+          <div
+            class="bg-[#363636] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div
+              class="h-60 overflow-hidden bg-gray-700 flex items-center justify-center"
+            >
+              <img
+                 src="img/captura1.png" 
+                 alt="Captura del sistema de inventario"
+                 class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold text-white mb-2">Gestion de inventario</h3>
+              <p class="text-light text-base mb-4 flex-1">
+                Sistema web para la automazacion de la gestion de inventario de la empresa "Alpaca F. Clothing"
+              </p>
+              <p class="text-xs text-[#CCCCCC] font-light mb-4">
+                Tecnologias : HTML , JavaScript, CSS, PHP
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fas fa-link"></i> Ver</a
+                >
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fab fa-github"></i> Ver codigo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div
+            class="bg-[#363636] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div
+              class="h-60 overflow-hidden bg-gray-700 flex items-center justify-center"
+            >
+              <img
+                 src="img/captura2.png" 
+                 alt="Captura del sistema de inventario"
+                 class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold text-white mb-2">Stream Compare</h3>
+              <p class="text-light text-base mb-4 flex-1">
+                Una plataforma interactiva "todo en uno" para descubrir, comparar y gestionar suscripciones de streaming (Video, Música y Gaming), diseñada para ayudar a los usuarios a optimizar su presupuesto y encontrar el contenido perfecto.
+              </p>
+              <p class="text-xs text-[#CCCCCC] font-light mb-4">
+                Tecnologias : HTML , JavaScript, CSS
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fas fa-link"></i> Ver pagina</a
+                >
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fab fa-github"></i> Ver codigo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div
+            class="bg-[#363636] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div
+              class="h-60 overflow-hidden bg-gray-700 flex items-center justify-center"
+            >
+              <img
+                 src="img/cargando.jpeg" 
+                 alt="Captura del sistema de inventario"
+                 class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold text-white mb-2">Proximamente..</h3>
+              <p class="text-light text-base mb-4 flex-1">
+                En proceso
+              </p>
+              <p class="text-xs text-[#CCCCCC] font-light mb-4">
+                Tech stack : HTML , JavaScript, SASS, React
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fas fa-link"></i> Live Preview</a
+                >
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fab fa-github"></i> View Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 4 -->
+          <div
+            class="bg-[#363636] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div
+              class="h-60 overflow-hidden bg-gray-700 flex items-center justify-center"
+            >
+              <img
+                 src="img/cargando.jpeg" 
+                 alt="Captura del sistema de inventario"
+                 class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold text-white mb-2">Proximamente..</h3>
+              <p class="text-light text-base mb-4 flex-1">
+                En proceso
+              </p>
+              <p class="text-xs text-[#CCCCCC] font-light mb-4">
+                Tech stack : HTML , JavaScript, SASS, React
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fas fa-link"></i> Live Preview</a
+                >
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fab fa-github"></i> View Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 5 -->
+          <div
+            class="bg-[#363636] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div
+              class="h-60 overflow-hidden bg-gray-700 flex items-center justify-center"
+            >
+              <img
+                 src="img/cargando.jpeg" 
+                 alt="Captura del sistema de inventario"
+                 class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold text-white mb-2">Proximamente..</h3>
+              <p class="text-light text-base mb-4 flex-1">
+                En proceso
+              </p>
+              <p class="text-xs text-[#CCCCCC] font-light mb-4">
+                Tech stack : HTML , JavaScript, SASS, React
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fas fa-link"></i> Live Preview</a
+                >
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fab fa-github"></i> View Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 6 -->
+          <div
+            class="bg-[#363636] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div
+              class="h-60 overflow-hidden bg-gray-700 flex items-center justify-center"
+            >
+              <img
+                 src="img/cargando.jpeg" 
+                 alt="Captura del sistema de inventario"
+                 class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold text-white mb-2">Proximamente..</h3>
+              <p class="text-light text-base mb-4 flex-1">
+                En proceso
+              </p>
+              <p class="text-xs text-[#CCCCCC] font-light mb-4">
+                Tech stack : HTML , JavaScript, SASS, React
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fas fa-link"></i> Live Preview</a
+                >
+                <a
+                  class="flex items-center gap-2 text-sm text-white hover:underline"
+                  href="#"
+                  ><i class="fab fa-github"></i> View Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Projects Section -->
+    </main>
+    <!-- BEGIN: Footer -->
+    <footer class="px-6 md:px-12 lg:px-32 pb-10">
+      <!-- Footer Top: Info -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-800 pb-10 mb-8"
+      >
+        <div class="mb-6 md:mb-0 flex items-center">
+          <span
+            class="bg-gradient-to-r from-[#13B0F5] to-[#E70FAA] text-transparent bg-clip-text font-bold tracking-wider text-xl whitespace-nowrap"
+            >JEREMY QR</span
+          >
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:space-x-12 items-center text-sm"
+        >
+          <div class="mb-6 md:mb-0 flex items-center">
+            <span
+              class="bg-gradient-to-r from-[#13B0F5] to-[#E70FAA] text-transparent bg-clip-text font-bold tracking-wider text-xl whitespace-nowrap"
+              >JEREMY QR</span
+            >
+          </div>
+          <div class="flex space-x-5 text-white">
+            <a class="hover:text-blue-400 transition" href="#"
+              ><i class="fab fa-github fa-lg"></i
+            ></a>
+            <a class="hover:text-blue-400 transition" href="#"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+            <a class="hover:text-blue-400 transition" href="#"
+              ><i class="fab fa-linkedin fa-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom: Nav & Copyright -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center text-sm"
+      >
+        <nav class="mb-4 md:mb-0">
+          <ul class="flex space-x-8">
+            <li><a class="hover:text-white transition" href="index.html">Inicio</a></li>
+            <li><a class="hover:text-white transition" href="about.html">Sobre mi</a></li>
+            <li>
+              <a class="hover:text-white transition" href="tecnologias.html">Tecnologias</a>
+            </li>
+            <li>
+              <a class="hover:text-white transition" href="portafolio.html">Portafolio</a>
+            </li>
+            <li><a class="hover:text-white transition" href="contactame.html">Contactame</a></li>
+          </ul>
+        </nav>
+        <div class="text-center">
+          <p>
+            Diseño y construido por 
+            <span class="text-gradient">Jeremy QR</span> with
+            <span class="text-gradient">Love</span> &amp;
+            <span class="text-gradient">Coffee</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- END: Footer -->
+  </body>
+</html>
